@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dikeyspace"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="386dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="HIT THE\n STARS"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <Button
+        android:id="@+id/startt"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/siyaharka"
+        android:text="START"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/selectedDiff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="397dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="471dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/selectedDiff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <View
+            android:layout_width="122dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/black" />
+
+
+        <TextView
+            android:id="@+id/difficulty"
+            android:layout_width="142dp"
+            android:layout_height="59dp"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Difficulty"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="269dp"
+            tools:layout_editor_absoluteY="669dp" />
+
+        <View
+            android:layout_width="129dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/black" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selectedDiff"
+        android:layout_width="166dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="139dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Hard"
+        android:textColor="#74F130"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/easy"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/siyaharka"
+        android:onClick="easy"
+        android:text="Easy"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedDiff" />
+
+    <Button
+        android:id="@+id/normal"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/siyaharka"
+        android:onClick="normal"
+        android:text="Normal"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedDiff" />
+
+    <Button
+        android:id="@+id/hard"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/siyaharka"
+        android:onClick="hard"
+        android:text="Hard"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedDiff" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
